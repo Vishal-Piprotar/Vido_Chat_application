@@ -23,9 +23,10 @@ import {
 } from "../utils/breadcrumbs";
 import { firebaseAuth } from "../utils/firebaseConfig";
 import { BreadCrumbsType } from "../utils/types";
-import logo1 from "../assets/logo1.png";
+import logo from "../assets/logo.png";
 
 export default function Header() {
+  
   const navigate = useNavigate();
   const location = useLocation();
   const userName = useAppSelector(
@@ -75,7 +76,8 @@ export default function Header() {
         <Link to="/">
           <EuiText>
             <h2 style={{ padding: "0 1vw" }}>
-              <EuiImage src={logo1} alt="icon" size="230px" />
+              <EuiImage src={logo} alt="icon" size="80px" />
+              <EuiTextColor color="#ffc300" style={{fontFamily:'Madimi One'}}>Vido&#10100; Chat &#10101;</EuiTextColor>
             </h2>
           </EuiText>
         </Link>,
@@ -88,7 +90,7 @@ export default function Header() {
             <EuiText>
               <h3>
                 <EuiTextColor color="white">Hello, </EuiTextColor>
-                <EuiTextColor color="#0b5cff">{userName}</EuiTextColor>
+                <EuiTextColor color="#ffc300">{userName}</EuiTextColor>
               </h3>
             </EuiText>
           ) : null}
@@ -145,8 +147,8 @@ export default function Header() {
         <Link to="/">
           <EuiText>
             <h2 style={{ padding: "0 1vw" }}>
-            <EuiImage src={logo1} alt="icon" size="100px" />
-
+            <EuiImage src={logo} alt="icon" size="50px" />
+              <EuiTextColor color="#ffc300" style={{fontFamily:'Madimi One', fontSize:'20px'}}>Vido&#10100; Chat &#10101;</EuiTextColor>
             </h2>
           </EuiText>
         </Link>,
@@ -185,7 +187,7 @@ export default function Header() {
           <EuiFlexItem grow={false} style={{ flexBasis: "fit-content" }}>
             <EuiButtonIcon
               onClick={logout}
-              iconType="lock"
+              iconType="arrowRight"
               display="fill"
               size="s"
               aria-label="logout-button"

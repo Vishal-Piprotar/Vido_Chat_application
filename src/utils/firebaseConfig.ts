@@ -1,14 +1,15 @@
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API,
-  authDomain: "quick-meet-app0.firebaseapp.com",
-  projectId: "quick-meet-app0",
-  storageBucket: "quick-meet-app0.appspot.com",
-  messagingSenderId: "1089586674815",
-  appId: "1:1089586674815:web:d32766e13a9ccb9243934a",
-  measurementId: "G-BNYMNS0ETJ"
+  authDomain: "vido-chat-app.firebaseapp.com",
+  projectId: "vido-chat-app",
+  storageBucket: "vido-chat-app.appspot.com",
+  messagingSenderId: "16828071225",
+  appId: "1:16828071225:web:7d317db9feddd8ec273ce8",
+  measurementId: "G-CP3K2JMEQX"
 };
 
 const app = initializeApp(firebaseConfig);

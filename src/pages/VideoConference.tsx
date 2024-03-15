@@ -24,6 +24,7 @@ import MeetingMaxUsers from "../components/Form/MeetingMaxUsers";
 import MeetingUser from "../components/Form/MeetingUser";
 import MeetingDate from "../components/Form/MeetingDate";
 import CreateButtons from "../components/Form/CreateButtons";
+import Footer from "../components/Footer";
 
 export default function VideoConference() {
   useAuth();
@@ -152,6 +153,7 @@ export default function VideoConference() {
           <CreateButtons createMeeting={createMeeting} />
         </EuiForm>
       </EuiFlexGroup>
+      <Footer />
     </div>
   );
 }

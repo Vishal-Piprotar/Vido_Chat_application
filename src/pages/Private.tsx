@@ -16,6 +16,7 @@ import MeetingName from "../components/Form/MeetingName";
 import MeetingUser from "../components/Form/MeetingUser";
 import MeetingDate from "../components/Form/MeetingDate";
 import CreateButtons from "../components/Form/CreateButtons";
+import Footer from "../components/Footer";
 
 export default function Private() {
   useAuth();
@@ -124,6 +125,7 @@ export default function Private() {
           <CreateButtons createMeeting={createMeeting} />
         </EuiForm>
       </EuiFlexGroup>
+      <Footer />
     </div>
   );
 }

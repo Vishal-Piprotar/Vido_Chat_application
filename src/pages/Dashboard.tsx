@@ -6,6 +6,7 @@ import dashboard2 from "../assets/dashboard2.jpg";
 import dashboard3 from "../assets/dashboard3.jpg";
 import Header from "../components/Header";
 import useAuth from "../hooks/useAuth";
+import Footer from "../components/Footer";
 
 function Dashboard() {
   useAuth();
@@ -54,6 +55,7 @@ function Dashboard() {
             />
           </EuiFlexItem>
         </EuiFlexGroup>
+        <Footer />
       </div>
     </>
   );

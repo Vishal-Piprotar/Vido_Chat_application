@@ -19,6 +19,7 @@ import useAuth from "../hooks/useAuth";
 import { meetingsRef } from "../utils/firebaseConfig";
 import { MeetingType } from "../utils/types";
 import { useAppSelector } from "../redux/hooks";
+import Footer from "../components/Footer";
 
 export default function Meeting() {
   useAuth();
@@ -132,6 +133,7 @@ export default function Meeting() {
           </EuiPanel>
         </EuiFlexItem>
       </EuiFlexGroup>
+      <Footer />
     </div>
   );
 }

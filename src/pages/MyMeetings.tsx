@@ -18,6 +18,7 @@ import useAuth from "../hooks/useAuth";
 import { meetingsRef } from "../utils/firebaseConfig";
 import { MeetingType } from "../utils/types";
 import { useAppSelector } from "../redux/hooks";
+import Footer from "../components/Footer";
 
 export default function MyMeetings() {
   useAuth();
@@ -158,6 +159,7 @@ export default function MyMeetings() {
       {showEditFlyout && (
         <EditFlyout closeFlyout={closeEditFlyout} meeting={editMeeting!} />
       )}
+      <Footer />
     </div>
   );
 }

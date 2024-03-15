@@ -7,6 +7,7 @@ import meeting2 from "../assets/meeting2.jpg";
 
 import Header from "../components/Header";
 import useAuth from "../hooks/useAuth";
+import Footer from "../components/Footer";
 
 export default function CreateMeeting() {
   useAuth();
@@ -46,6 +47,7 @@ export default function CreateMeeting() {
             />
           </EuiFlexItem>
         </EuiFlexGroup>
+        <Footer/>
       </div>
     </>
   );

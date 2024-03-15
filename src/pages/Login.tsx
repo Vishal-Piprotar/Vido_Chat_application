@@ -24,6 +24,7 @@ import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../redux/hooks";
 import { setUser } from "../redux/slices/AuthSlice";
 import { collection, query, where, addDoc, getDocs } from "firebase/firestore";
+import Footer from "../components/Footer";
 
 function Login() {
   const navigate = useNavigate();
@@ -58,7 +59,7 @@ function Login() {
       <EuiFlexGroup
         justifyContent="center"
         alignItems="center"
-        style={{ width: "100vw", height: "100vh" }}
+        style={{ width: "100vw", height: "92vh" }}
       >
         <EuiFlexItem grow={false}>
           <EuiPanel paddingSize="xl">
@@ -67,7 +68,7 @@ function Login() {
                 <EuiImage src={animation1} alt="logo"  size={300}/>
               </EuiFlexItem>
               <EuiFlexItem>
-                <EuiImage src={logomain} alt="logo" size="80px"/>
+                <EuiImage src={logo} alt="logo" size="150px"/>
                 <EuiSpacer size="xs" />
                 <EuiText textAlign="center" grow={false}>
                   <h3>
@@ -84,7 +85,9 @@ function Login() {
           </EuiPanel>
         </EuiFlexItem>
       </EuiFlexGroup>
+      <Footer />
     </EuiProvider>
+    
   );
 }
 
