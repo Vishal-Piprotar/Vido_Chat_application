@@ -2,7 +2,7 @@ import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyC6zPCycxDtkCLCqssencL7I8EZDrZcNoM",
+  apiKey: process.env.REACT_APP_FIREBASE_API,
   authDomain: "quick-meet-app0.firebaseapp.com",
   projectId: "quick-meet-app0",
   storageBucket: "quick-meet-app0.appspot.com",

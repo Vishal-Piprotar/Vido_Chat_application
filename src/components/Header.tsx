@@ -128,7 +128,7 @@ export default function Header() {
           <EuiFlexItem grow={false} style={{ flexBasis: "fit-content" }}>
             <EuiButtonIcon
               onClick={logout}
-              iconType="lock"
+              iconType="arrowRight"
               display="fill"
               size="s"
               aria-label="logout-button"
